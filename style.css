@@ -1,0 +1,133 @@
+.functionContainer {
+  height: 20%;
+  display: block;
+  text-align: center;
+  padding: 5% 0% 5% 0%;
+  border-bottom: 5px solid black;
+  font-family: sans-serif;
+}
+.hideTextBox{
+  display: inline-block;
+  clear: both;
+}
+.oneButton{
+  display: inline-block;
+  text-align: center;
+  margin-right: 15%;
+}
+#clickHide {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#clickShow {
+  float: right;
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+#clickHide2 {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#clickShow2 {
+  float: right;
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+#clickToggle {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#slideDown {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background-color: red;
+}
+#clickToggle2 {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#clickColor {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.blue {
+  color: blue;
+}
+#clickBefore {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#clickAfter {
+  float: right;
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+#clickAppend {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#clickText {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#clickHtml {
+  float: right;
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+#changeAttr {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#functionContainerAttr{
+  height: 20%;
+  display: block;
+  text-align: center;
+  padding: 5% 0% 5% 0%;
+  border-bottom: 5px solid black;
+  font-family: sans-serif;
+}
+.functionContainerBlue {
+  height: 20%;
+  display: block;
+  text-align: center;
+  padding: 5% 0% 5% 0%;
+  border-bottom: 5px solid black;
+  font-family: sans-serif;
+  background-color: blue;
+}
+#clickValue {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#clickData {
+  float: left;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+}

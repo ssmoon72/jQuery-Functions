@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> jQuery Functions </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#clickHide').click(function(){
+          $('.hide').fadeOut("slow", function(){
+
+          });
+        });
+        $('#clickShow').click(function(){
+          $('.hide').fadeIn("slow", function(){
+
+          });
+        });
+        $('#clickHide2').click(function(){
+          $('.hide2').hide(function(){
+
+          });
+        });
+        $('#clickShow2').click(function(){
+          $('.hide2').show(function(){
+
+          });
+        });
+        $('#clickToggle').click(function(){
+          $('.toggleNumber').toggle(function(){
+          });
+        });
+        $('#clickToggle2').click(function(){
+          $('#slideDown').slideToggle("slow", function(){
+          });
+        });
+        $('#clickColor').click(function(){
+          $('.colorHeader').addClass("blue");
+        });
+        $('#clickBefore').click(function(){
+          $('.missing1').before("<b>add</b>");
+        });
+        $('#clickAfter').click(function(){
+          $('.missing2').after("<b>another</b>");
+        });
+        $('#clickAppend').click(function(){
+          $('.appendP').append("<b>sentence</b>");
+        });
+        $('#clickText button').click(function(){
+          $('.textChange').text("New Description");
+        });
+        $('#clickHtml').click(function(){
+          $('.changeP').html("<p> <b>New <i>Description</i> </b> </p>");
+        });
+        $('#changeAttr').click(function(){
+          $('#functionContainerAttr').attr("class", "functionContainerBlue");
+        });
+        $('#clickValue').click(function(){
+          var choice = $("#choiceOption").val();
+          $('#valueP').text("The value of the selection is: " + choice);
+        });
+        $('#clickData').click(function(){
+          $("#dataBox").data("boxdata", "DATABOX");
+          $('#dataP').text($('#dataBox').data("boxdata"));
+        });
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="functionContainer">
+      <button id="clickHide"> Click to Hide </button>
+      <div class="hideTextBox">
+        <h1 class="hide"> Click and Hide: fade in </h1>
+        <p class="hide"> Click the button to hide the text fancy style! Click the other side to show it again! </p>
+      </div>
+      <button id="clickShow"> Click to Show </button>
+    </div>
+    <div class="functionContainer">
+      <button id="clickHide2"> Click to Hide </button>
+      <div class="hideTextBox">
+        <h1 class="hide2"> Click and Hide </h1>
+        <p class="hide2"> Click the button to hide the text! Click the other side to show it again! </p>
+      </div>
+      <button id="clickShow2"> Click to Show </button>
+    </div>
+    <div class="functionContainer">
+      <button id="clickToggle"> Click to toggle </button>
+      <div class="oneButton">
+        <h1 class="toggleNumber"> Click to Toggle </h1>
+        <p> Click the button to hide. Click again to reveal. </p>
+      </div>
+    </div>
+    <div class="functionContainer">
+      <button id="clickToggle2"> Click to reveal </button>
+      <div class="oneButton">
+        <div id="slideDown"></div>
+        <p> Click the button to hide. Click again to reveal. </p>
+      </div>
+    </div>
+    <div class="functionContainer">
+      <button id="clickColor"> Click to color </button>
+      <div class="oneButton">
+        <h1 class="colorHeader"> Click to Color </h1>
+        <p> Click the button to color the header. </p>
+      </div>
+    </div>
+    <div class="functionContainer">
+      <button id="clickBefore"> Click to Add</button>
+      <div class="hideTextBox">
+        <h1> Add Missing Words </h1>
+        <p> Click the button to <span class="missing1"> a missing </span> word to the text. Click the other side to <span class="missing2"> add </span> missing word. </p>
+      </div>
+      <button id="clickAfter"> Click to Add </button>
+    </div>
+    <div class="functionContainer">
+      <button id="clickAppend"> Click to Add </button>
+      <div class="oneButton">
+        <h1 class="toggleNumber"> Click to Add (end) </h1>
+        <p class="appendP"> Click the button to add something to the end of this </p>
+      </div>
+    </div>
+    <div class="functionContainer">
+      <button id="clickText"> Click to Change </button>
+      <div class="hideTextBox">
+        <h1 class="textChange"> Click and Hide </h1>
+        <p class="changeP"> Click the button on the left to change the title! Click the other button to change the description! </p>
+      </div>
+      <button id="clickHtml"> Click to Change </button>
+    </div>
+    <div id="functionContainerAttr">
+      <button id="changeAttr"> Click to change attribute </button>
+      <div class="oneButton">
+        <h1 class="toggleNumber"> Click to Change Attribute </h1>
+        <p class="appendP"> Click to change the attribute of this box </p>
+      </div>
+    </div>
+    <div class="functionContainer">
+      <button id="clickValue"> Click to Get Value </button>
+      <div class="oneButton">
+        <h1 class="toggleNumber"> Click to Get Value </h1>
+        <p> Click the button to get the value of the dropdown list </p>
+        <p id="valueP"></p>
+        <select id="choiceOption">
+          <option value="one"> One </option>
+          <option value="two"> Two </option>
+          <option value="three"> Three </option>
+        </select>
+      </div>
+    </div>
+    <div class="functionContainer">
+      <button id="clickData"> Click to Get Stored Data </button>
+      <div class="oneButton" id="dataBox">
+        <h1 class="toggleNumber"> Click to Get Data </h1>
+        <p> Click the button to get the stored data</p>
+        <p>The value of the data is <span id="dataP"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
